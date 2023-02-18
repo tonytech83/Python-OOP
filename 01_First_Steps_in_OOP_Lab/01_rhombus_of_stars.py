@@ -2,7 +2,7 @@
 # From: First Steps in OOP - Lab
 # URL: https://judge.softuni.org/Contests/Practice/Index/1934#0
 
-class DrawRhombus:
+class Rhombus:
 
     def __init__(self, size):
         self.size = size
@@ -41,5 +41,5 @@ class DrawRhombus:
 
 if __name__ == '__main__':
     n = int(input())
-    rhombus = DrawRhombus(n).main()
+    rhombus = Rhombus(n).main()
     print(rhombus)
