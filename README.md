@@ -5,7 +5,7 @@ Python OOP - February 2023
 <br/>
 
 <h5 align="center">
-The Python OOP course teachs the principles of object-oriented programming (OOP), working with classes and objects, using object-oriented modeling, and building class hierarchies. Basic principles of OOP such as abstraction (interfaces, abstract classes), encapsulation, inheritance and polymorphism. It goes into the most commonly used design patterns (creational, structural and behavioral design patterns). The course introduced SOLID principles for object-oriented software design. It helps to learn what iterators and generators are and how to use them, also how to create and use decorators. Also pays attention to unit testing (writing unit tests) and the concept of Test Driven Development (TDD).
+The Python OOP course teachs the principles of object-oriented programming (OOP), working with classes and objects, using object-oriented modeling, and building class hierarchies. Basic principles of OOP such as abstraction (interfaces, abstract classes), encapsulation, inheritance and polymorphism. It goes into the most commonly used design patterns (creational, structural and behavioral design patterns). The course introduce SOLID principles for object-oriented software design. It helps to learn what iterators and generators are and how to use them, also how to create and use decorators. Also pays attention to unit testing (writing unit tests) and the concept of Test Driven Development (TDD).
 </h5>
 
 <br/>
