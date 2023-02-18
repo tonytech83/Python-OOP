@@ -1,2 +1,2 @@
-# Python-OPP
-Softuni Python OPP February 2023
+# Python-OOP
+Softuni Python OOP February 2023
