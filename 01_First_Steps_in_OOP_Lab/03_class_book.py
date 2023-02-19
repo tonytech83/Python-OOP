@@ -1,3 +1,7 @@
+# Exam: 03. Class Book
+# From: First Steps in OOP - Lab
+# URL: https://judge.softuni.org/Contests/Practice/Index/1934#2
+
 class Book:
     def __init__(self, name, author, pages):
         self.name = name
