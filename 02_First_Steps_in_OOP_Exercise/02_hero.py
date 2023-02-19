@@ -8,11 +8,8 @@ class Hero:
         self.health = health
 
     def defend(self, damage):
-        self.health -= damage
-
-        if self.health <= 0:
-            self.health = 0
-            return f'{self.name} was defeated'
+        self.health = max(self.health - damage, 0)
+        return f'{self.name} was defeated' if self.health <= 0 else None
 
     def heal(self, amount):
         self.health += amount
