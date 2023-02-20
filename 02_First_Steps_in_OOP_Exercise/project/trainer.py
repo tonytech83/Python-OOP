@@ -7,7 +7,7 @@ class Trainer:
         self.pokemons = []
 
     def add_pokemon(self, pokemon: Pokemon):
-        if pokemon not in self.pokemons:
+        if any([x.name == pokemon.name for x in self.pokemons]):
             self.pokemons.append(pokemon)
             return f'Caught {pokemon.pokemon_details()}'
 
