@@ -1,3 +1,7 @@
+# Exam: 08. Pokemon Battle
+# From: First Steps in OOP - Exercise
+# URL: https://judge.softuni.org/Contests/Compete/Index/1935#7
+
 from project.pokemon import Pokemon
 from project.trainer import Trainer
 
