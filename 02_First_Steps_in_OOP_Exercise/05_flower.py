@@ -3,15 +3,15 @@
 # URL: https://judge.softuni.org/Contests/Practice/Index/1935#4
 
 class Flower:
-    def __init__(self, name, water_requirements):
+    def __init__(self, name: str, water_requirements: int):
         self.name = name
         self.water_requirements = water_requirements
         self.is_happy = False
 
-    def water(self, quantity):
+    def water(self, quantity: int) -> None:
         self.is_happy = quantity >= self.water_requirements
 
-    def status(self):
+    def status(self) -> str:
         return f'{self.name} {"is" if self.is_happy else "is not"} happy'
 
 
