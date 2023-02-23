@@ -7,11 +7,12 @@ class Hero:
         self.name = name
         self.health = health
 
-    def defend(self, damage):
+    def defend(self, damage: int):
         self.health = max(self.health - damage, 0)
+
         return f'{self.name} was defeated' if self.health <= 0 else None
 
-    def heal(self, amount):
+    def heal(self, amount: int):
         self.health += amount
 
 
