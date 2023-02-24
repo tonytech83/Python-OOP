@@ -7,14 +7,14 @@ from typing import List
 
 class Vet:
     animals = []
-    space = 5
+    SPACE = 5
 
     def __init__(self, name: str):
         self.name = name
         self.animals: List[str] = []
 
     def register_animal(self, animal_name: str) -> str:
-        if Vet.space == len(Vet.animals):
+        if Vet.SPACE == len(Vet.animals):
             return 'Not enough space'
 
         Vet.animals.append(animal_name)
@@ -32,7 +32,7 @@ class Vet:
         return f'{animal_name} not in the clinic'
 
     def info(self) -> str:
-        return f'{self.name} has {len(self.animals)} animals. {Vet.space - len(Vet.animals)} space left in clinic'
+        return f'{self.name} has {len(self.animals)} animals. {Vet.SPACE - len(Vet.animals)} space left in clinic'
 
 
 # Test code
