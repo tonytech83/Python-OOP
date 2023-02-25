@@ -6,9 +6,7 @@ class Album:
         self.name = name
         self.published = False
         self.songs: list = []
-
-        for song in songs_to_add:
-            self.add_song(song)
+        self.init_songs(songs_to_add)
 
     def add_song(self, song: Song) -> str:
         if self.published:
@@ -50,3 +48,7 @@ class Album:
         result += '\n'.join(f'== {song.get_info()}' for song in self.songs)
 
         return result
+
+    def init_songs(self, initial_songs) -> None:
+        for song in initial_songs:
+            self.add_song(song)
