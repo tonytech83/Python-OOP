@@ -1,6 +1,7 @@
-# Exam: 02. Zoo
+# Exam: 03. Players and Monsters
 # From: Inheritance - Exercise
-# URL: https://judge.softuni.org/Contests/Compete/Index/1941#0
+# URL: https://judge.softuni.org/Contests/Compete/Index/1941#2
+
 from project.elf import Elf
 from project.hero import Hero
 

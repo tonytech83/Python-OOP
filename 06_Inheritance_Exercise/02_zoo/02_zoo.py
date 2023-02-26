@@ -1,6 +1,6 @@
 # Exam: 02. Zoo
 # From: Inheritance - Exercise
-# URL: https://judge.softuni.org/Contests/Compete/Index/1941#0
+# URL: https://judge.softuni.org/Contests/Compete/Index/1941#1
 
 from project.lizard import Lizard
 from project.mammal import Mammal
