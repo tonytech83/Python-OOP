@@ -1,7 +1,3 @@
-# Exam: 02. Time
-# From: Classes and Objects - Exercise
-# URL: https://judge.softuni.org/Contests/Compete/Index/1937#1
-
 class Time:
     max_hours = 23
     max_minutes = 59
@@ -35,17 +31,3 @@ class Time:
                     self.hours = 0
 
         return self.get_time()
-
-
-# Test codes
-time = Time(9, 30, 59)
-print(time.next_second())
-
-time = Time(10, 59, 59)
-print(time.next_second())
-
-time = Time(23, 59, 59)
-print(time.next_second())
-
-time = Time(23, 59, 20)
-print(time.next_second())
