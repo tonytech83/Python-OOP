@@ -17,6 +17,9 @@ class Profile:
 
     @username.setter
     def username(self, value):
+        """
+        Checks the length of username, it should be between 5 and 15 characters (inclusive).
+        """
         if len(value) < 5 or len(value) > 15:
             raise ValueError('The username must be between 5 and 15 characters.')
 
@@ -24,6 +27,10 @@ class Profile:
 
     @password.setter
     def password(self, value):
+        """
+        The password must be at least 8 characters long;
+        it must contain at least one upper case letter and at least one digit
+        """
         if all([
             self.check_password_len(value),
             self.check_for_capital_letter(value),
