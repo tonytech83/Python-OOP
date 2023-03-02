@@ -1,6 +1,6 @@
-<h2 align="center">04. Restaurant</h2>
+<p align="center" font-size: 40px>**04. Restaurant**</p>
 
-<br/>
+________________________________________________________
 
 <p align="left">
 Create a restaurant with the following classes and hierarchy:
@@ -39,6 +39,8 @@ The **Product** class should have the following **private attributes** and subse
   - **CALORIES = 1000 (constant)**
   - **PRICE = 5 (constant)**
 </p>
+
+_____________________________________________________________
 
 <h4 align="center">Test Code</h4>
 
