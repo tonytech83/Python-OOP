@@ -1,4 +1,8 @@
-<p align="center" font-size: 40px>**04. Restaurant**</p>
+<p align="center">
+<strong>
+04. Restaurant
+</strong>
+</p>
 
 ________________________________________________________
 
