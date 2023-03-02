@@ -2,7 +2,7 @@
 
 <br/>
 
-<h4 align="left">
+<p align="left">
 Create a separate file for each class as shown below and submit a zip file containing all files (zip the whole project folder/module) - it is important to include all files in the project module to make proper imports.
 
 Create a class called **Player**. Upon initialization, it should receive:
@@ -16,15 +16,15 @@ Create a class called **Player**. Upon initialization, it should receive:
 You should create property only for the name of the player. The class should also have one additional method:
 Override the **__str__()** method of the class so it returns:
 
-**"Player: {name}
+**"Player: {name}**
 
-Sprint: {sprint}
+**Sprint: {sprint}**
 
-Dribble: {dribble}
+**Dribble: {dribble}**
 
-Passing: {passing}
+**Passing: {passing}**
 
-Shooting: {shooting}"**
+**Shooting: {shooting}"**
 
 Create a class called **Team**. Upon initialization, it should receive:
 
@@ -41,8 +41,7 @@ The **Team** class have the following methods:
     - **Otherwise, add the player** to the team and return **"Player {name} joined team {team_name}"**
 - **remove_player(player_name: str)**
     - **Remove the player** and **return him**
-    - If the player **is not in the team**, return **"Player {player_name} not found"**
-      </h4>
+    - If the player **is not in the team**, return **"Player {player_name} not found"**</p>
 
 <h4 align="center">Test Code</h4>
 
