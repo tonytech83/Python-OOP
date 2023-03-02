@@ -21,6 +21,9 @@ The Python OOP course teachs the principles of object-oriented programming (OOP)
 ## Table of Contents:
 
 - [First Steps in OOP](https://github.com/tonytech83/Python-OOP/tree/main/01_First_Steps_in_OOP_Lab)
+- [Classes and Objects](https://github.com/tonytech83/Python-OOP/tree/main/03_Classes_and_Objects_Lab)
+- [Inheritance](https://github.com/tonytech83/Python-OOP/tree/main/05_Inheritance_Lab)
+- [Encapsulation](https://github.com/tonytech83/Python-OOP/tree/main/07_Encapsulation_Lab)
 
 <br/>
 <br/>
