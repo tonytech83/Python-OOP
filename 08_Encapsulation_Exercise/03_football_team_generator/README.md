@@ -44,9 +44,8 @@ The Team class have the following methods:
     - If the player is not in the team, return "Player {player_name} not found"
       </h4>
 
-<br/>
-
 <h4 align="center">Test Code</h4>
+
 ```Pyton
 
 from project.player import Player
@@ -75,7 +74,9 @@ print("Teams players:", len(t._Team__players))
 print(t.remove_player("Pall"))
 print(t.remove_player("Pall"))
 ```
+
 <h4 align="center">Output</h4>
+
 ```
 Player name: Pall
 Points sprint: 1
