@@ -7,11 +7,11 @@ class Hotel:
         self.rooms: list = []
 
     @property
-    def guests(self):
+    def guests(self) -> int:
         return sum([room.guests for room in self.rooms])
 
     @classmethod
-    def from_stars(cls, stars_count: int):
+    def from_stars(cls, stars_count: int) -> Room:
         return cls(f'{stars_count} stars Hotel')
 
     def add_room(self, room: Room):
@@ -23,7 +23,7 @@ class Hotel:
     def free_room(self, room_number: int):
         return self.__found_room(room_number).free_room()
 
-    def __found_room(self, room_number):
+    def __found_room(self, room_number: int) -> Room:
         return [room for room in self.rooms if room.number == room_number][0]
 
     def status(self):
