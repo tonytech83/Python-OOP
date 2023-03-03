@@ -7,7 +7,7 @@ class Room:
         self.is_taken: bool = False
 
     def take_room(self, people: int) -> str or None:
-        if self.is_taken and self.capacity < people:
+        if self.is_taken or self.capacity < people:
             return f'Room number {self.number} cannot be taken'
 
         self.guests += people
