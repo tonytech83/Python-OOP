@@ -18,14 +18,13 @@ class Hotel:
         self.rooms.append(room)
 
     def take_room(self, room_number: int, people: int):
-        for room in self.rooms:
-            if room.number == room_number:
-                return room.take_room(people)
+        return self.__found_room(room_number).take_room(people)
 
     def free_room(self, room_number: int):
-        for room in self.rooms:
-            if room.number == room_number:
-                return room.free_room()
+        return self.__found_room(room_number).free_room()
+
+    def __found_room(self, room_number):
+        return [room for room in self.rooms if room.number == room_number][0]
 
     def status(self):
         result = f'Hotel {self.name} has {self.guests} total guests\n' \
