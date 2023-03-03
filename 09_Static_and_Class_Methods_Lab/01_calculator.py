@@ -1,3 +1,7 @@
+# Exam: 01. Calculator
+# From: Static and Class Methods - Lab
+# https://judge.softuni.org/Contests/Practice/Index/2430#0
+
 from functools import reduce
 
 
