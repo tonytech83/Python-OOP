@@ -1,3 +1,7 @@
+# Exam: 02. Shop
+# From: Static and Class Methods - Lab
+# https://judge.softuni.org/Contests/Practice/Index/2430#1
+
 class Shop:
     def __init__(self, name: str, type: str, capacity: int):
         self.name = name
