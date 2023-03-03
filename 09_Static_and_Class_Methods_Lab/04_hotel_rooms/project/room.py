@@ -7,12 +7,11 @@ class Room:
         self.is_taken: bool = False
 
     def take_room(self, people: int) -> str or None:
-        if not self.is_taken and self.capacity >= people:
-            self.guests += people
-            self.is_taken = True
-            return
+        if self.is_taken and self.capacity < people:
+            return f'Room number {self.number} cannot be taken'
 
-        return f'Room number {self.number} cannot be taken'
+        self.guests += people
+        self.is_taken = True
 
     def free_room(self) -> str or None:
         if not self.is_taken:
