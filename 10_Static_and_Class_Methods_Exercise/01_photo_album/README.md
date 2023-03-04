@@ -32,7 +32,7 @@ _____________________________________________________________
 
 <h4 align="center">Test Code</h4>
 
-```Pyton
+```Python
 album = PhotoAlbum(2)
 
 print(album.add_photo("baby"))

@@ -18,7 +18,7 @@ _____________________________________________________________
 
 <h4 align="center">Test Code</h4>
 
-```Pyton
+```Python
 first_num = Integer(10)
 print(first_num.value)
 

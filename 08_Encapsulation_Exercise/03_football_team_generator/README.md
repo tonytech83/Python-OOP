@@ -45,7 +45,7 @@ The **Team** class have the following methods:
 
 <h4 align="center">Test Code</h4>
 
-```Pyton
+```Python
 
 from project.player import Player
 from project.team import Team

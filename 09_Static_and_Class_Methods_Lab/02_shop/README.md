@@ -20,7 +20,7 @@ _____________________________________________________________
 
 <h4 align="center">Test Code</h4>
 
-```Pyton
+```Python
 fresh_shop = Shop("Fresh Shop", "Fruit and Veg", 50)
 small_shop = Shop.small_shop("Fashion Boutique", "Clothes")
 print(fresh_shop)

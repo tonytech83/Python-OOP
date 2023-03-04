@@ -31,7 +31,7 @@ _____________________________________________________________
 
 <h4 align="center">Test Code</h4>
 
-```Pyton
+```Python
 from project.hotel import Hotel
 from project.room import Room
 

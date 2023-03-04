@@ -46,7 +46,7 @@ _____________________________________________________________
 
 <h4 align="center">Test Code</h4>
 
-```Pyton
+```Python
 from project.customer import Customer
 from project.dvd import DVD
 from project.movie_world import MovieWorld

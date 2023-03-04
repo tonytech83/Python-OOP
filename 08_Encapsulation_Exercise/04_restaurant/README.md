@@ -48,7 +48,7 @@ _____________________________________________________________
 
 <h4 align="center">Test Code</h4>
 
-```Pyton
+```Python
 product = Product("coffee", 2.5)
 print(product.__class__.__name__)
 print(product.name)
