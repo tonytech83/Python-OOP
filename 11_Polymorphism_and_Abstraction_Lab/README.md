@@ -55,7 +55,9 @@ print(a1 >= a3)
 False
 False
 ```
+
 <h4 align="center">Test Code 3</h4>
+
 ```Python
 a1 = ImageArea(7, 10)
 a2 = ImageArea(35, 2)
