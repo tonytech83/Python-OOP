@@ -25,6 +25,7 @@ The Python OOP course teachs the principles of object-oriented programming (OOP)
 - [Inheritance](https://github.com/tonytech83/Python-OOP/tree/main/05_Inheritance_Lab)
 - [Encapsulation](https://github.com/tonytech83/Python-OOP/tree/main/07_Encapsulation_Lab)
 - [Static and Class Methods](https://github.com/tonytech83/Python-OOP/tree/main/09_Static_and_Class_Methods_Lab)
+- [Polymorphism and Abstraction](https://github.com/tonytech83/Python-OOP/tree/main/11_Polymorphism_and_Abstraction_Lab)
 
 <br/>
 <br/>
