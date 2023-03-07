@@ -37,5 +37,6 @@ print(truck.fuel_quantity)
 2.299999999999997
 12.299999999999997
 
-![img.png](img.png)
+17.0
+64.5
 ```
