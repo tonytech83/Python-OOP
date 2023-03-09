@@ -33,12 +33,12 @@ class PhotoAlbum:
 
     def display(self):
         separator = '-' * 11
-        result = separator + '\n'
+        result = [separator]
         for page in self.photos:
-            current_page = " ".join([f'[]' for _ in page])
-            result += current_page + '\n' + separator + '\n'
+            result.append(" ".join([f'[]' for _ in page]))
+            result.append(separator)
 
-        return result
+        return '\n'.join(result)
 
 
 # Test code:
