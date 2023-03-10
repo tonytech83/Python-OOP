@@ -1,6 +1,6 @@
 class Topic:
-    def __init__(self, id: int, topic: str, storage_folder: str):
-        self.id = id
+    def __init__(self, topic_id: int, topic: str, storage_folder: str):
+        self.id = topic_id
         self.topic = topic
         self.storage_folder = storage_folder
 

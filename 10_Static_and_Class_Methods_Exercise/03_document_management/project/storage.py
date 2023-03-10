@@ -49,9 +49,6 @@ class Storage:
     def get_document(self, document_id: int) -> Document:
         return self.__find_document_by_id(document_id)
 
-    def __repr__(self) -> str:
-        return '\n'.join(repr(d) for d in self.documents)
-
     def __find_category_by_id(self, category_id) -> Category:
         return [c for c in self.categories if c.id == category_id][0]
 
@@ -60,3 +57,6 @@ class Storage:
 
     def __find_document_by_id(self, document_id) -> Document:
         return [d for d in self.documents if d.id == document_id][0]
+
+    def __repr__(self) -> str:
+        return '\n'.join(repr(d) for d in self.documents)
