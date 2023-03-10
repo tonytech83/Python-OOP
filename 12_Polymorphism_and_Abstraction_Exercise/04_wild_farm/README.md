@@ -9,6 +9,7 @@ ________________________________________________________
 <p align="left">
 
 Create the following project structure:
+
 ![Picture1.png](Picture1.png)
 
 Your task is to create a class **hierarchy** like the one described below. The **Animal**, **Bird**, **Mammal**, and **Food** classes should be abstract:
