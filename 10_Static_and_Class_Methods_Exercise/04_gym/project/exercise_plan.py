@@ -1,17 +1,16 @@
-class ExercisePlan:
+from project.next_id_mixin import NextIdMixin
+
+
+class ExercisePlan(NextIdMixin):
     id = 1
 
     def __init__(self, trainer_id: int, equipment_id: int, duration: int):
         self.trainer_id = trainer_id
         self.equipment_id = equipment_id
         self.duration = duration  # in minutes
-        self.id = ExercisePlan.get_next_id()
+        self.id = self.get_next_id()
 
-    @staticmethod
-    def get_next_id():
-        plan_id = ExercisePlan.id
-        ExercisePlan.id += 1
-        return plan_id
+
 
     @classmethod
     def from_hours(cls, trainer_id: int, equipment_id: int, hours: int):

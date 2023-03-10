@@ -1,5 +1,4 @@
 from typing import List
-
 from project.customer import Customer
 from project.equipment import Equipment
 from project.exercise_plan import ExercisePlan
@@ -52,15 +51,11 @@ class Gym:
         plan = self.__find_object_by_id(self.plans, subscription.exercise_id)
         equipment = self.__find_object_by_id(self.equipment, plan.equipment_id)
 
-        return repr(subscription) + '\n' + \
-            repr(customer) + '\n' + \
-            repr(trainer) + '\n' + \
-            repr(equipment) + '\n' + \
-            repr(plan)
+        return f'{subscription}\n{customer}\n{trainer}\n{equipment}\n{plan}'
 
     @staticmethod
-    def __find_object_by_id(collection, id):
+    def __find_object_by_id(collection, object_id):
         try:
-            return [x for x in collection if x.id == id][0]
+            return [x for x in collection if x.id == object_id][0]
         except IndexError:
             return None
