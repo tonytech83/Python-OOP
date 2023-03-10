@@ -1,3 +1,7 @@
+# Exam: 03. Account
+# From: Polymorphism and Abstraction - Exercise
+# https: https://judge.softuni.org/Contests/Compete/Index/1943#2
+
 class Account:
     def __init__(self, owner: str, amount: int = 0):
         self.owner = owner
