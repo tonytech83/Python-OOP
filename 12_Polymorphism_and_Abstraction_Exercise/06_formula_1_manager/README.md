@@ -9,6 +9,7 @@ ________________________________________________________
 <p align="left">
 
 For this task, you will be provided with a skeleton that includes all the folders and files you need.
+
 ![Picture2.png](Picture2.png)
 
 _**Judge Upload**_
