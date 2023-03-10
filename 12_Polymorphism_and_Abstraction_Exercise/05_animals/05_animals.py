@@ -1,3 +1,7 @@
+# Exam: 05. Animals
+# From: Polymorphism and Abstraction - Exercise
+# https: https://judge.softuni.org/Contests/Compete/Index/1943#4
+
 # Test code 1
 from project.cat import Cat
 from project.dog import Dog
