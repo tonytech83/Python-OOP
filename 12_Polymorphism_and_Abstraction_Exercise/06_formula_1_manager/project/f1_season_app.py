@@ -12,11 +12,9 @@ class F1SeasonApp:
             raise ValueError('Invalid team name!')
 
         if team_name == 'Red Bull':
-            registration = RedBullTeam(budget)
-            self.red_bull_team = registration
+            self.red_bull_team = RedBullTeam(budget)
         else:
-            registration = MercedesTeam(budget)
-            self.mercedes_team = registration
+            self.mercedes_team = MercedesTeam(budget)
 
         return f'{team_name} has joined the new F1 season.'
 
