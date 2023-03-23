@@ -36,13 +36,23 @@ class SuperWorker(Work, Eat):
         time.sleep(3)
 
 
+class LazyWorker(Work, Eat):
+
+    def work(self):
+        print("It's a good that I work in this company, otherwise it's lost!")
+
+    def eat(self):
+        print("Lunch break....(15 secs)")
+        time.sleep(15)
+
+
 class Robot(Work):
 
     def work(self):
         print("I'm a robot. I'm working....")
 
 
-class Manager(ABC):
+class BaseManager(ABC):
 
     def __init__(self):
         self.worker = None
@@ -52,7 +62,7 @@ class Manager(ABC):
         pass
 
 
-class WorkManager(Manager):
+class WorkManager(BaseManager):
 
     def set_worker(self, worker):
         assert isinstance(worker, Work), f"`worker` must be of type {Work}"
@@ -63,7 +73,7 @@ class WorkManager(Manager):
         self.worker.work()
 
 
-class BreakManager(Manager):
+class BreakManager(BaseManager):
 
     def set_worker(self, worker):
         assert isinstance(worker, Eat), f"`worker` must be of type {Eat}"
@@ -83,6 +93,11 @@ break_manager.lunch_break()
 
 work_manager.set_worker(SuperWorker())
 break_manager.set_worker(SuperWorker())
+work_manager.manage()
+break_manager.lunch_break()
+
+work_manager.set_worker(LazyWorker())
+break_manager.set_worker(LazyWorker())
 work_manager.manage()
 break_manager.lunch_break()
 

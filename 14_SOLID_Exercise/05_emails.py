@@ -17,6 +17,52 @@ class MyContent(IContent):
         return ''.join(['<myML>', self.text, '</myML>'])
 
 
+class HTMLContent(IContent):
+
+    def format(self):
+        return ''.join(['<html>', self.text, '</html>'])
+
+
+class ISender(ABC):
+    def __init__(self, name):
+        self.name = name
+
+    @abstractmethod
+    def format(self):
+        pass
+
+
+class IMSender(ISender):
+
+    def format(self):
+        return ' '.join(["I'm", self.name])
+
+
+class POPSender(ISender):
+    def format(self):
+        return ' '.join(["P'op", self.name])
+
+
+class IReceiver(ABC):
+    def __init__(self, name):
+        self.name = name
+
+    @abstractmethod
+    def format(self):
+        pass
+
+
+class IMReceiver(IReceiver):
+
+    def format(self):
+        return ' '.join(["I'm", self.name])
+
+
+class POPReceiver(IReceiver):
+    def format(self):
+        return ' '.join(["P'op", self.name])
+
+
 class IEmail(ABC):
 
     @abstractmethod
@@ -30,45 +76,41 @@ class IEmail(ABC):
 
 class Email(IEmail):
 
-    def __init__(self, protocol):
-        self.protocol = protocol
+    def __init__(self):
         self.__sender = None
         self.__receiver = None
         self.__content = None
 
     def set_sender(self, sender):
-        if self.protocol == 'IM':
-            self.__sender = ''.join(["I'm ", sender])
-        else:
-            self.__sender = sender
+        self.__sender = sender.format()
 
     def set_receiver(self, receiver):
-        if self.protocol == 'IM':
-            self.__receiver = ''.join(["I'm ", receiver])
-        else:
-            self.__receiver = receiver
+        self.__receiver = receiver.format()
 
     def set_content(self, content):
         self.__content = content.format()
 
     def __repr__(self):
-
         return f"Sender: {self.__sender}\nReceiver: {self.__receiver}\nContent:\n{self.__content}"
 
 
-# Before
-# email = Email('IM', 'MyML')
-# email.set_sender('qmal')
-# email.set_receiver('james')
-# email.set_content('Hello, there!')
-# print(email)
+# Test code
+email = Email()
+im_sender = IMSender('qmal')
+im_receiver = IMReceiver('james')
+pop_sender = POPSender('ivan')
+pop_receiver = POPReceiver('stoyan')
+my_content = MyContent('Hello, there!')
+html_content = HTMLContent('Hello for html!')
 
-# After
-email = Email('IM')
-email.set_sender('qmal')
-email.set_receiver('james')
-content = MyContent('Hello, there!')
-email.set_content(content)
-print(email)
+test_data = [
+    (pop_sender, pop_receiver, my_content),
+    (im_sender, im_receiver, html_content)
+]
 
-# TODO -> set_receiver and set_sender
+for sender, receiver, content in test_data:
+    email.set_sender(sender)
+    email.set_receiver(receiver)
+    email.set_content(content)
+    print(email)
+    print()

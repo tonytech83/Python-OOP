@@ -41,8 +41,8 @@ class Circle(Shape):
 
 class AreaCalculator:
 
-    def __init__(self, shapes):
-        self.shapes = shapes
+    def __init__(self, shapes_data):
+        self.shapes = shapes_data
 
     @property
     def shapes(self):
@@ -50,7 +50,9 @@ class AreaCalculator:
 
     @shapes.setter
     def shapes(self, value):
-        assert isinstance(value, list), "`shapes` should be of type `list`."
+        if not isinstance(value, list):
+            raise TypeError("`shapes` should be of type `list`.")
+
         self.__shapes = value
 
     @property
@@ -63,13 +65,27 @@ class AreaCalculator:
         return total
 
 
-# Test code before
-shapes = [Rectangle(2, 3), Rectangle(1, 6)]
-calculator = AreaCalculator(shapes)
-print("The total area is: ", calculator.total_area)
+class TypesInformation:
+
+    def __init__(self, shapes_data):
+        self.shapes = shapes_data
+        self.shapes_types: dict = {}
+
+    @property
+    def shapes_per_type(self):
+        for shape in self.shapes:
+            if shape.__class__.__name__ not in self.shapes_types:
+                self.shapes_types[shape.__class__.__name__] = 0
+            self.shapes_types[shape.__class__.__name__] += 1
+
+        return '\n'.join(f'{k} - {v}' for k, v in self.shapes_types.items())
+
 
 # Test code after
-shapes = [Rectangle(1, 6), Triangle(2, 3)]
+shapes = [Rectangle(1, 6), Triangle(2, 3), Circle(5), Rectangle(2, 4)]
+types = TypesInformation(shapes)
 calculator = AreaCalculator(shapes)
 
+print(f"You are trying to calculate total area of these shapes:\n{types.shapes_per_type}")
+print()
 print("The total area is: ", calculator.total_area)
