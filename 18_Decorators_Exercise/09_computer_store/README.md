@@ -9,7 +9,9 @@ ________________________________________________________
 <p align="left">
 
 For this task, you will be provided with a **skeleton** that includes all the folders and files you need.
+
 ![img.png](img.png)
+    
 _**Note: You cannot change the folder and file structure and their names!**_
 
 **Judge Upload**
