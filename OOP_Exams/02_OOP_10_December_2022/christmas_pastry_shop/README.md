@@ -1,7 +1,6 @@
 ﻿
 # **Python OOP Exam - Christmas Pastry Shop**
 
-________________________________________________________
 
 *As we all love delicacies, today you were chosen to build a simple Christmas pastry shop software system. This system must have support for **delicacies** and **booths** in the pastry shop.*
 
@@ -154,9 +153,38 @@ Finds **the first** booth that is **not reserved** and whose **capacity is enoug
 **"Income: {income - formatted to the second decimal place}lv."**
 #### **Examples**
 
-|**Input**|
-| - |
-|<p>shop = ChristmasPastryShopApp()</p><p>print(shop.add\_delicacy("Gingerbread", "Gingy", 5.20))</p><p>print(shop.delicacies[0].details())</p><p>print(shop.add\_booth("Open Booth", 1, 30))</p><p>print(shop.add\_booth("Private Booth", 10, 5))</p><p>print(shop.reserve\_booth(30))</p><p>print(shop.order\_delicacy(1, "Gingy"))</p><p>print(shop.leave\_booth(1))</p><p>print(shop.reserve\_booth(5))</p><p>print(shop.order\_delicacy(1, "Gingy"))</p><p>print(shop.order\_delicacy(1, "Gingy"))</p><p>print(shop.order\_delicacy(1, "Gingy"))</p><p>print(shop.leave\_booth(1))</p><p>print(shop.get\_income())</p>|
-|**Output**|
-|<p>Added delicacy Gingy - Gingerbread to the pastry shop.</p><p>Gingerbread Gingy: 200g - 5.20lv.</p><p>Added booth number 1 in the pastry shop.</p><p>Added booth number 10 in the pastry shop.</p><p>Booth 1 has been reserved for 30 people.</p><p>Booth 1 ordered Gingy.</p><p>Booth 1:</p><p>Bill: 80.20lv.</p><p>Booth 1 has been reserved for 5 people.</p><p>Booth 1 ordered Gingy.</p><p>Booth 1 ordered Gingy.</p><p>Booth 1 ordered Gingy.</p><p>Booth 1:</p><p>Bill: 28.10lv.</p><p>Income: 108.30lv.</p>|
-
+**Input**
+```Python
+shop = ChristmasPastryShopApp()
+print(shop.add_delicacy("Gingerbread", "Gingy", 5.20))
+print(shop.delicacies[0].details())
+print(shop.add_booth("Open Booth", 1, 30))
+print(shop.add_booth("Private Booth", 10, 5))
+print(shop.reserve_booth(30))
+print(shop.order_delicacy(1, "Gingy"))
+print(shop.leave_booth(1))
+print(shop.reserve_booth(5))
+print(shop.order_delicacy(1, "Gingy"))
+print(shop.order_delicacy(1, "Gingy"))
+print(shop.order_delicacy(1, "Gingy"))
+print(shop.leave_booth(1))
+print(shop.get_income())
+```
+**Output**
+```
+Added delicacy Gingy - Gingerbread to the pastry shop.
+Gingerbread Gingy: 200g - 5.20lv.
+Added booth number 1 in the pastry shop.
+Added booth number 10 in the pastry shop.
+Booth 1 has been reserved for 30 people.
+Booth 1 ordered Gingy.
+Booth 1:
+Bill: 80.20lv.
+Booth 1 has been reserved for 5 people.
+Booth 1 ordered Gingy.
+Booth 1 ordered Gingy.
+Booth 1 ordered Gingy.
+Booth 1:
+Bill: 28.10lv.
+Income: 108.30lv.
+```
