@@ -4,6 +4,17 @@
 *You are chosen to take part in a Start-up company, which develops an electric vehicles rent-a-car application. Your task is to create the classes needed for the application and implement the logic, standing behind some important buttons. The application should support **User**, **Vehicle,** and **Route**. The project has a managing app that controls and interacts with **users, vehicles,** and **routes**.*
 
 You will be provided with a **skeleton** that includes all the folders and files that you will need.
+```plain
+.
+├── managing_app.py
+├── route.py
+├── user.py
+└── vehicles
+    ├── base_vehicle.py
+    ├── cargo_van.py
+    ├── __init__.py
+    └── passenger_car.py
+```
 
 ***Note: You are not allowed to change the folder and file structure and change their names!***
 
